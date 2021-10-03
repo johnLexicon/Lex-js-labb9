@@ -1,5 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  --primary-color: #b8b8b8;
+  --lexicon-red: #d60000;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.show-links {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar-brand {
+  display: contents; /* Centralizes the image vertically */
+}
+
+.navbar-toggler {
+  border: none;
+  color: var(--primary-color);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.collapse {
+  display: none;
+}
+
+.navbar-collapse {
+  display: block;
+  flex-basis: 100%;
+}
+
+.navbar-collapse .navbar-nav {
+  margin-top: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.active {
+  color: #e64c4c;
+}
+
+a:active {
+  color: var(--danger-color);
+}
+
+@media (min-width: 992px) {
+  .collapse {
+    display: block;
+  }
+  .navbar-toggler {
+    display: none;
+  }
 }
