@@ -17,6 +17,8 @@ html {
 }
 
 .navbar {
+  position: fixed;
+  width: 100%;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
 
@@ -69,11 +71,11 @@ html {
 
 .nav-link {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--lexicon-red);
 }
 
 .active {
-  color: #e64c4c;
+  color: #00459e;
 }
 
 a:active {
@@ -81,16 +83,22 @@ a:active {
 }
 
 main {
-  margin-top: 3rem;
+  height: 100vh;
+  background-image: url('images/lex-dator.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .card {
   color: var(--primary-color);
+  background-color: #fff;
   border-radius: 15px;
   padding: 2rem;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   width: 75%;
-  margin: auto;
 }
 
 @media (min-width: 992px) {
