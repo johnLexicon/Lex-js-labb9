@@ -6,14 +6,8 @@ const navLinks = document.querySelectorAll('.nav-link');
 /*------------- Toggle navbar-nav -----------*/
 
 navbarToggler.addEventListener('click', (e) => {
-  navItemsContainer.classList.toggle('navbar-collapse');
+  navItemsContainer.classList.toggle('collapse');
 });
-
-window.onresize = () => {
-  if (window.innerWidth >= 992) {
-    navItemsContainer.classList.remove('navbar-collapse');
-  }
-};
 
 /*------------ Active link ----------------*/
 
