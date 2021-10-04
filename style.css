@@ -43,7 +43,8 @@ html {
 
 .navbar-toggler {
   border: none;
-  color: var(--primary-color);
+  color: var(--lexicon-red);
+  margin-top: -5px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -84,9 +85,10 @@ a:active {
 
 main {
   height: 100vh;
-  background-image: url('images/lex-dator.jpeg');
+  background-image: url('images/lex-kontor.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -114,6 +116,9 @@ main {
   .navbar-collapse .navbar-nav {
     margin-top: 0;
     flex-direction: row;
+  }
+  main {
+    background-image: url('images/lex-dator.jpeg');
   }
   .card {
     width: 50%;
